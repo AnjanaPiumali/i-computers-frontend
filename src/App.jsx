@@ -5,13 +5,14 @@ import LoginPage from './pages/LoginPage';
 import RegisterPage from './pages/RegisterPage';
 import AdminPage from './pages/AdminPage';
 import TestPage from './pages/TestPage';
+import { Toaster } from 'react-hot-toast';
 
 
 function App() {
 
   return (
     <div className="w-full h-screen">
-      
+      <Toaster position='top-right' />
       <Routes>
 
         <Route path="/" element={<HomePage/>} />
